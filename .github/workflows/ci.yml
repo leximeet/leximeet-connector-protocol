@@ -35,7 +35,7 @@ jobs:
         run: npm ci --ignore-scripts
       - name: 格式、合同、参考验证和正式发行归档
         run: npm run package:release -- .runtime/ci-release
-      # 仅上传可核查文件，不创建远端标签、npm 包或 GitHub Release。
+      # 测试任务只上传可核查文件；正式标签另由最后的发布任务交付。
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         if: success()
         with:
@@ -43,3 +43,39 @@ jobs:
           path: .runtime/ci-release/
           if-no-files-found: error
           retention-days: 30
+
+  release:
+    name: Publish verified contract and source archives
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
+        with:
+          name: lmcp-1.0.0-node-22
+          path: .runtime/publish/
+      - name: 复核原样规范、附件摘要与标签源码
+        run: |
+          node tools/package-release.cjs --verify .runtime/publish
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const { execFileSync } = require('node:child_process');
+          const manifest = JSON.parse(fs.readFileSync('.runtime/publish/RELEASE-MANIFEST.json', 'utf8'));
+          const commit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+          if (manifest.releaseTag !== process.env.GITHUB_REF_NAME || manifest.source.commit !== commit) throw new Error('发行来源与 Git 标签不一致');
+          NODE
+      - name: 完整附件上传后公开正式 Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" .runtime/publish/* --verify-tag --draft --title "LexiMeet Connector Protocol $GITHUB_REF_NAME" --notes-file "docs/版本/$GITHUB_REF_NAME.md"
+          gh release edit "$GITHUB_REF_NAME" --draft=false --latest

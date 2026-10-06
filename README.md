@@ -94,3 +94,5 @@ npm run verify
 词身份与公共词卡来自 leximeet-dictionary 0.0.3（[GitHub](https://github.com/leximeet/leximeet-dictionary) / [Gitee](https://gitee.com/leximeet/leximeet-dictionary)）。感谢 [Chrome Native Messaging](https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging)、[JSON Schema](https://json-schema.org/draft/2020-12)、[Ajv](https://ajv.js.org/) 与 [RFC 8785](https://www.rfc-editor.org/rfc/rfc8785)。品牌图为词遇项目物料；它们不授予冒用项目身份的权利。代码与文档许可见 [AGPL-3.0-only](LICENSE)。
 
 统一文档源：[GitHub](https://github.com/leximeet/leximeet.github.io/tree/main/docs) / [Gitee](https://gitee.com/leximeet/leximeet.github.io/tree/main/docs) · [许可范围](docs/许可证.md)
+
+[下载 1.0.0](https://github.com/leximeet/leximeet-connector-protocol/releases/tag/1.0.0) · [发行附件与验证范围](docs/版本/1.0.0.md)
