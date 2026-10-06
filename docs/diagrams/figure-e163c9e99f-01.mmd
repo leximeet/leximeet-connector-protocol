@@ -1,0 +1,8 @@
+sequenceDiagram
+  participant P as 协议维护者
+  participant A as 应用维护者
+  P->>P: 改规范、样例、测试并生成摘要
+  P->>A: 版本 + manifest + 改动与兼容范围
+  A->>A: 固定身份、DTO 及能力声明
+  A->>A: 单端、真实连接、恢复及安装物回归
+  A-->>P: 版本与可复现结果

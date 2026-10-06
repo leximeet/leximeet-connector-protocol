@@ -1,0 +1,6 @@
+flowchart LR
+  A[独立插件] --> L[(插件资料 A)]
+  B[连接插件的遇见与采集] <-->|LMCP| D[Desktop]
+  D --> W[(Desktop 资料 B)]
+  B -.-> F[封存 A]
+  D -.->|应用 2.0.0 · LMSP| C[云端]

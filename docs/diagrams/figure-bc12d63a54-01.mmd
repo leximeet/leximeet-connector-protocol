@@ -1,0 +1,9 @@
+stateDiagram-v2
+  [*] --> Independent
+  Independent --> Preparing: 用户选择连接并冻结独立入口
+  Preparing --> Connected: 配对授权后持久切换 owner
+  Preparing --> Independent: 确认未接受且取消/过期；保持登出
+  Connected --> Reconnecting: 连接丢失
+  Reconnecting --> Connected: 恢复同一授权与工作区
+  Connected --> Independent: 用户明确断开并恢复独立
+  Reconnecting --> Independent: 用户明确恢复独立并隔离未知操作

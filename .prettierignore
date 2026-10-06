@@ -1,0 +1,23 @@
+# 原始规范字节参与交付摘要，禁止隐式格式化。
+docs/extensions/browser.md
+docs/共享数据模型.md
+docs/兼容与迭代.md
+docs/双向宿主能力.md
+docs/实现与验收.md
+docs/接口规范.md
+docs/架构与接入.md
+docs/自动发现与连接邀请.md
+docs/连接与恢复.md
+docs/配对与契约身份.md
+extensions.json
+host-methods.json
+methods.json
+schemas/browser-host.v1.schema.json
+schemas/desktop-api.v1.schema.json
+schemas/dictionary-entry.v2.schema.json
+schemas/reading-domain.v1.schema.json
+node_modules/
+package-lock.json
+
+# 图表为带哈希的生成物，不能二次格式化。
+docs/diagrams/rendered/

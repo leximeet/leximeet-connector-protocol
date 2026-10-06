@@ -1,0 +1,12 @@
+sequenceDiagram
+  participant B as Browser 后台
+  participant H as Native Host
+  participant D as Desktop
+  B->>H: connectNative / hello / pair
+  B->>D: registerHost 实际能力
+  D-->>B: grantId + grantToken + expiresAt
+  D->>B: host-request browser.getContext
+  B-->>D: host-response 授权页句柄
+  D->>B: host-request browser.highlight
+  B->>B: 校验页面代次与权限
+  B-->>D: matched / highlighted

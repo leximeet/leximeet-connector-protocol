@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "diagrams": [
+    {
+      "id": "figure-b335630551-01",
+      "page": "README.md",
+      "source": "docs/diagrams/figure-b335630551-01.mmd",
+      "sourceSha256": "523b25326c8e7d387f72ff1bb4a0d2332f9a9135613ab94575c992512b51222e",
+      "origin": "README.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "cf332d7fc53f5b8c3ff529d34df7bcce8fd3aa15bed8a76e8bef2e421aad7609"
+    },
+    {
+      "id": "figure-1970c5a6ff-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-1970c5a6ff-01.mmd",
+      "sourceSha256": "65e9355a65fc277cb5e27b137680d9ea77c2eec64b8e7f93d2e6c68d5bbe99d9",
+      "origin": "docs/extensions/browser.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "6e50f07fad980e17a4c514ad39bcf90643bcc034f2c41dc5b826d86ddee71515"
+    },
+    {
+      "id": "figure-57fc767aa7-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-57fc767aa7-01.mmd",
+      "sourceSha256": "432fdbedcfb229771c4a2725f225eb4b8e2022f3e97c60288b0155eba6237dcf",
+      "origin": "docs/共享数据模型.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "1dc3e9e7f4f969b3a5df6a52989f3bdaef3ea4815c54c2659d8d86d4718094f1"
+    },
+    {
+      "id": "figure-2e8fe0e0ce-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-2e8fe0e0ce-01.mmd",
+      "sourceSha256": "0f830d10177a721153256dc4fab24ac5b5457f06a64b3716a654f0475819c063",
+      "origin": "docs/兼容与迭代.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "8b8ac1318e08b6251e537094dc9a04311d4120b100db276dfcf9376d1fe87a6d"
+    },
+    {
+      "id": "figure-d20331de2a-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-d20331de2a-01.mmd",
+      "sourceSha256": "14812dc981cd2203112b8d20782f4007b3a96ea9e05da1549b438e8338cdcfea",
+      "origin": "docs/双向宿主能力.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "8e7de530ed879df01facfc75d01515b6654e6b3ec722962f7a20584c7273f429"
+    },
+    {
+      "id": "figure-e163c9e99f-01",
+      "page": "docs/发布与维护.md",
+      "source": "docs/diagrams/figure-e163c9e99f-01.mmd",
+      "sourceSha256": "b5c0691504b0ffaf9905e2d08780da6470ef25eb245952740c94698f9ce66fca",
+      "origin": "docs/发布与维护.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "f41b6cbd336ceee4a362cac1cc1475641bccee7e69755a2ff7a26dc1214f5b4c"
+    },
+    {
+      "id": "figure-3c8909d50f-01",
+      "page": "docs/图表规范.md",
+      "source": "docs/diagrams/figure-3c8909d50f-01.mmd",
+      "sourceSha256": "9a2e9caf7e400de241dc4637f664cf34609c3ff555f0a97b266303068bd06f34",
+      "origin": "docs/图表规范.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "0052aa9cbb8784a6b718c00d6cbcc0e8ab78c2b707db2d53b3ae2deee3c26950"
+    },
+    {
+      "id": "figure-e91ef97771-01",
+      "page": "docs/安全与隐私.md",
+      "source": "docs/diagrams/figure-e91ef97771-01.mmd",
+      "sourceSha256": "65500a1cc3e4cd96a235c1026abc27b61bc1d790a8ec4619983546bb477e786d",
+      "origin": "docs/安全与隐私.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "30e0a8e443cfcc988fe82a42bed6a2a09b854c04faca6cc9c7cbd225fb949e76"
+    },
+    {
+      "id": "figure-07662899b6-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-07662899b6-01.mmd",
+      "sourceSha256": "0be413f30d14d327f218cd5249b8cf58f105a8fcabc0c6aebf056eb47e0d7372",
+      "origin": "docs/实现与验收.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "28cff8e48c765569490cd4b9f0d1237829a9324049b6e85da184e0ad1a63027b"
+    },
+    {
+      "id": "figure-c92284f1ee-01",
+      "page": "docs/开发与验证.md",
+      "source": "docs/diagrams/figure-c92284f1ee-01.mmd",
+      "sourceSha256": "8ed1577e272563b7f9197d811e79b079856e4f20bc215fb488f840ae4af4fe6f",
+      "origin": "docs/开发与验证.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "5964d1e4187886ee4d0020c2b14c6f28a37fed89bf9482d089bc0016c4c7e7b3"
+    },
+    {
+      "id": "figure-c37e5cffd9-01",
+      "page": "docs/接入实战.md",
+      "source": "docs/diagrams/figure-c37e5cffd9-01.mmd",
+      "sourceSha256": "ad15f9bebd90ac55219ac7a51ebe17955a8b11bc7501ef870ef285bcb654baab",
+      "origin": "docs/接入实战.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "19991b9f782bc5a78c52e05ad21e807a3d681cfec9d88f9ae8a45e9e94fbd62e"
+    },
+    {
+      "id": "figure-c37e5cffd9-02",
+      "page": "docs/接入实战.md",
+      "source": "docs/diagrams/figure-c37e5cffd9-02.mmd",
+      "sourceSha256": "228fb91dec6c7aeb1ac1515bf30468562f83a8f6f5f77d2a8944f41622bfcb62",
+      "origin": "docs/接入实战.md",
+      "originDiagram": 2,
+      "originDiagramSha256": "b58096bee3b7dbb6720d73710c5ff77e28f4ed21512eafa073d24b1931cb86cd"
+    },
+    {
+      "id": "figure-c37e5cffd9-03",
+      "page": "docs/接入实战.md",
+      "source": "docs/diagrams/figure-c37e5cffd9-03.mmd",
+      "sourceSha256": "51156733413ac4fb0571378113f9b0821ccd29bb7e9baed04c21b3147fa1cfb2",
+      "origin": "docs/接入实战.md",
+      "originDiagram": 3,
+      "originDiagramSha256": "383212514b375c6d091fea4534484a4814754dd9fb3a2fa808dc58bd4a932819"
+    },
+    {
+      "id": "figure-c7641d758d-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-c7641d758d-01.mmd",
+      "sourceSha256": "fa79ae7328dd8ab3ccae71f22cce01c420c2cfbf7ffaec4625a979f00f73f1a4",
+      "origin": "docs/接口规范.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "0957d48261332eac49f9c9d77a8163d729ea4ac0595e748f9700e52362c50382"
+    },
+    {
+      "id": "figure-6e3d4d33c1-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-6e3d4d33c1-01.mmd",
+      "sourceSha256": "f770ec63c64d699c63757b40170c0f650803a8e23c99b714f44fc3ef1da4c857",
+      "origin": "docs/架构与接入.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "594616a9e0efb6b60b55422d952b60c594cac3ccd85c7a86318ed74fe99c762e"
+    },
+    {
+      "id": "figure-78f83210b9-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-78f83210b9-01.mmd",
+      "sourceSha256": "7c23d9f2198a77a1731ca6436490e41805915751de9216c271974aa2df9ea68a",
+      "origin": "docs/自动发现与连接邀请.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "716b5856cd352caf2480c82aaa73dc205310c68280c0eae765e2a82190eaabf4"
+    },
+    {
+      "id": "figure-78f83210b9-02",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-78f83210b9-02.mmd",
+      "sourceSha256": "dcd0bf93527268064e0bb4fcd71f2d2deb1067da333c06083d5caa963926e904",
+      "origin": "docs/自动发现与连接邀请.md",
+      "originDiagram": 2,
+      "originDiagramSha256": "be4942cfb2b9f4f057fc8233b066b64d3d7aad01147fe900f49b33fc88d44d4b"
+    },
+    {
+      "id": "figure-960d46a5b9-01",
+      "page": "docs/路线图.md",
+      "source": "docs/diagrams/figure-960d46a5b9-01.mmd",
+      "sourceSha256": "4b58fd07870c92cb3fbdc8700903c023cfac5f80077ae19a18b5bbf22ffc6fef",
+      "origin": "docs/路线图.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "2aa31d0270529004db1c6ac48fa5afbb435ce1bb3dd1f0343b7b34df2c601172"
+    },
+    {
+      "id": "figure-bc12d63a54-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-bc12d63a54-01.mmd",
+      "sourceSha256": "075be3d828390b8c9f13d930cc8e3c4f9e64fddc68528b6adaf0def3461ee4db",
+      "origin": "docs/连接与恢复.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "804eb5a90b7831e4c0a88951a6ceb70edab59fd55fd47460bd4470b1eadf5742"
+    },
+    {
+      "id": "figure-bc12d63a54-02",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-bc12d63a54-02.mmd",
+      "sourceSha256": "92140ea4f513c83e21a58815b07401603b6b53fdc872af4c0938cef4998894af",
+      "origin": "docs/连接与恢复.md",
+      "originDiagram": 2,
+      "originDiagramSha256": "a61159906516e36b879e9badd2c08e41b6ace16fb74713c3875ecca143c3434a"
+    },
+    {
+      "id": "figure-749eb5932c-01",
+      "page": "docs/图解手册.md",
+      "source": "docs/diagrams/figure-749eb5932c-01.mmd",
+      "sourceSha256": "aed96000be7c37c8d7266725c98daa8aa96d2738d7dc2e1d250e8d61db445986",
+      "origin": "docs/配对与契约身份.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "a3ae1e9b431e8046a8a3f7cdc4be814416927ecf0126a2da4666dd6c8cfada57"
+    },
+    {
+      "id": "figure-fe6ecce616-01",
+      "page": "docs/验证范围.md",
+      "source": "docs/diagrams/figure-fe6ecce616-01.mmd",
+      "sourceSha256": "7ce9eb066e9cc62f158d3928ef880d1c1ec2e18690b59f08a08597c641b7142f",
+      "origin": "docs/验证范围.md",
+      "originDiagram": 1,
+      "originDiagramSha256": "0e755d77453cf4386b1152dfdffd15b85e1381a2af2511a466bd51792b333924"
+    }
+  ]
+}

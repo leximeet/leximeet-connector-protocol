@@ -1,0 +1,45 @@
+name: Contract checks
+
+on:
+  push:
+    branches: [main]
+    tags: ['[0-9]*.[0-9]*.[0-9]*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contract-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Node ${{ matrix.node }} · format and contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ['22', '24']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - name: 锁定依赖安装
+        run: npm ci --ignore-scripts
+      - name: 格式、合同、参考验证和正式发行归档
+        run: npm run package:release -- .runtime/ci-release
+      # 仅上传可核查文件，不创建远端标签、npm 包或 GitHub Release。
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        if: success()
+        with:
+          name: lmcp-1.0.0-node-${{ matrix.node }}
+          path: .runtime/ci-release/
+          if-no-files-found: error
+          retention-days: 30

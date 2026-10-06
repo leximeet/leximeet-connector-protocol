@@ -1,0 +1,12 @@
+sequenceDiagram
+  participant B as Browser
+  participant D as Desktop
+  B->>D: hello 与用户授权
+  B->>D: pair
+  D-->>B: 配对凭据与业务会话
+  B->>D: 完成本地切换后调用查询和采集
+  Note over B,D: 端口重建或 Worker 重启
+  B->>D: 新 connectionId 的 hello
+  B->>D: resumeSession
+  D-->>B: 同一 owner 的新会话
+  B->>D: 查询原 mutationId 回执

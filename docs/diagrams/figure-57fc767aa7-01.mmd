@@ -1,0 +1,6 @@
+flowchart LR
+  D[LMSP 完整领域模型] --> E[按 reading-domain-export 裁剪]
+  E --> S[词身份与采集快照]
+  S --> L[LMCP 查询和采集 DTO]
+  P[Desktop 学习服务] --> V[只读分数与阶段摘要]
+  V --> L

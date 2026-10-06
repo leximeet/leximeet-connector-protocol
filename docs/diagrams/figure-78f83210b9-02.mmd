@@ -1,0 +1,6 @@
+stateDiagram-v2
+  Connected --> Reconnecting: 临时 Port / Desktop 失联
+  Reconnecting --> Connected: 原 owner 恢复
+  Connected --> Independent: Browser 明确 disconnect
+  Connected --> Independent: Desktop 明确 disconnect，插件收到可信控制状态
+  Reconnecting --> Independent: 收到本人 disconnected 状态或用户明确断开

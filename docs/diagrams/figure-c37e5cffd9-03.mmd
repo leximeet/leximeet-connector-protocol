@@ -1,0 +1,9 @@
+flowchart TD
+  S("提交原 mutationId 与载荷") --> R("是否收到可验证终态")
+  R -->|成功| A("更新词卡与采集状态")
+  R -->|业务拒绝| F("展示原因，保留用户草稿")
+  R -->|超时或断线| U("保存原意图，状态为待确认")
+  U --> Q("原 owner 恢复后查询 getOperation")
+  Q -->|已有终态| A
+  Q -->|未确认| S
+  class R decision

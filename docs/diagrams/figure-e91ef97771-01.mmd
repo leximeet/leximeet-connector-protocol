@@ -1,0 +1,6 @@
+flowchart LR
+  P[不可信网页] --> C[受限内容脚本]
+  C --> B[Browser 可信后台]
+  B -->|真实 origin| H[Native Host]
+  H -->|同用户受限 IPC| M[Desktop Main 网关]
+  M --> K[Core 鉴权与业务事务]

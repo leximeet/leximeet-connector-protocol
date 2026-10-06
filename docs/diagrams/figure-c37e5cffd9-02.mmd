@@ -1,0 +1,17 @@
+sequenceDiagram
+  participant U as 用户
+  participant B as 插件可信后台
+  participant D as Desktop Core
+  B->>D: hello：实例、名称、已实现合同与能力
+  D-->>B: 兼容信息和安全设备名称
+  U->>B: 点击连接（Desktop 也可发起）
+  B->>D: requestConnection
+  B->>D: getConnectionStatus
+  D-->>B: 指定客户端的 pending 邀请
+  B->>U: 插件真实确认窗口
+  U->>B: 确认
+  B->>B: 停写 A，持久保存恢复信息，封存 A
+  B->>D: pair：后台票据，不让用户输入码
+  D-->>B: 配对凭据与业务会话
+  B->>D: getWorkspace
+  B->>B: 核对 owner，再发布已连接状态

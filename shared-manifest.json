@@ -1,0 +1,25 @@
+{
+  "authority": "leximeet-sync-protocol",
+  "contractVersion": "1.0.0-rc.5",
+  "sourceDomainSha256": "bc005c0ee7917fb761a8aa4a17a5c38765adf5d00c0e4546e2d5564eeba522d1",
+  "exportRoots": [
+    "Cursor",
+    "Day",
+    "EncounterRecordRead",
+    "ErrorRead",
+    "NotebookRecordRead",
+    "Range",
+    "RangeRead",
+    "Revision",
+    "Sha256",
+    "Timestamp",
+    "Uuid",
+    "Version",
+    "WordRef",
+    "WordRefRead",
+    "WorkspaceIdentity"
+  ],
+  "sha256": {
+    "schemas/reading-domain.v1.schema.json": "01094e7b4ad13ca36e755b68c23ea8dfe4f32425f2c27b802b25e7de7d4222cf"
+  }
+}

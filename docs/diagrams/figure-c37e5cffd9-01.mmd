@@ -1,0 +1,8 @@
+flowchart TD
+  U("插件功能层：词卡、侧边栏、采集") --> P("ReadingPort / CapturePort")
+  P -->|独立| A("本地业务核心与资料 A")
+  P -->|已连接| T("可信后台：LMCP 适配器")
+  T --> N("Native Messaging Host")
+  N --> D("Desktop Core：资料 B 与新遇见 C")
+  D --> M("Desktop 管理和学习界面")
+  T -. "连接期间封存，不复制" .-> A

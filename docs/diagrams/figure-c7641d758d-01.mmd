@@ -1,0 +1,8 @@
+sequenceDiagram
+  participant B as Browser
+  participant D as Desktop
+  B->>D: recordEncounter 同一 mutationId
+  D->>D: 业务、关系、修订、回执同事务
+  D--xB: 响应丢失
+  B->>D: getOperation 原 mutationId
+  D-->>B: 原终态与完整结果

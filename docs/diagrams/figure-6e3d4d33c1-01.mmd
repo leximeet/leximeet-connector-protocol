@@ -1,0 +1,12 @@
+flowchart TB
+  UI[侧栏与悬浮球] --> P[ReadingPort 与 CapturePort]
+  P -->|独立| L[本地适配器]
+  P -->|连接| R[Desktop API 适配器]
+  L --> A[(独立资料 A)]
+  R <-->|本机传输| D[Desktop 业务服务]
+  M[独立管理与学习界面] --> L
+  N[连接模式管理入口] --> O[在 Desktop 打开]
+  O --> D
+  DU[Desktop 界面] --> D
+  D --> B[(Desktop 资料 B)]
+  D -.->|可选调用| H[插件宿主能力]

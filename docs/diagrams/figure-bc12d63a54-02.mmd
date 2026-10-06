@@ -1,0 +1,13 @@
+sequenceDiagram
+  participant B as Browser 后台
+  participant A as 独立库 A
+  participant D as Desktop
+  B->>D: hello
+  B->>A: 停写并记录封存状态
+  B->>B: 独立账号退出、同步停止
+  B->>D: pair 或 resumeSession
+  D-->>B: owner、会话与权限
+  B->>D: getWorkspace
+  D-->>B: Desktop 上下文 B
+  B->>B: 持久切换数据源
+  Note over A,D: 不传输 A，不合并到 B

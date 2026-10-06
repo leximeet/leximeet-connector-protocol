@@ -1,0 +1,18 @@
+sequenceDiagram
+  participant U as 用户
+  participant B as Browser 可信后台
+  participant D as Desktop
+  B->>D: hello(clientInstanceId, displayName)
+  D-->>B: 桌面实例、名称、合同与能力
+  U->>D: 一键连接已发现插件（也可在插件发起）
+  D->>D: 建立指定客户端的 120 秒邀请
+  B->>D: getConnectionStatus
+  D-->>B: pending 邀请（秘密票据只进后台）
+  B->>U: 真正的插件确认窗口
+  U->>B: 确认连接
+  B->>B: 先持久记录邀请、停写并封存 A
+  B->>D: pair(invitationId, invitationToken, clientInstanceId)
+  D-->>B: 原子签发配对凭据与会话
+  B->>D: getWorkspace 验证 owner
+  B->>B: 切换为读 B、采集写 C
+  Note over B,D: 双方显示成功；A 从不上传
