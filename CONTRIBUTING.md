@@ -2,6 +2,10 @@
 
 感谢帮助完善词遇的本机合同。先读 [文档索引](docs/文档索引.md)和[开发与验证](docs/开发与验证.md)。
 
+## 选择贡献入口
+
+在 [GitHub](https://github.com/leximeet/leximeet-connector-protocol) 或 [Gitee](https://gitee.com/leximeet/leximeet-connector-protocol) Fork、提交 Issue 或合并请求，采用相同的审查与验证要求。同一问题选择一处持续讨论即可；已有另一平台的记录时附链接。维护者先整合到同一条 main 历史，再同步相同提交，避免两个平台产生不同合同。
+
 ## 提交一个有用的问题
 
 请说明期望结果、实际行为、应用与合同版本、平台和最小复现，并注明问题发生在哪一层。复现材料请使用合成词和语境，移除个人路径、凭据、用户正文与数据库。漏洞通过 [安全报告](SECURITY.md) 私下沟通，不在公开问题中发布秘密。
